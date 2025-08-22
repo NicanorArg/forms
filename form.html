@@ -86,7 +86,7 @@
             <br>
 
             <label for="sexo">Sexo</label>
-            <select name="sexo" id="sexo">
+            <select name="sexo" id="sexo" required>
                 <option disabled selected>seleccione una opcion</option>
                 <option value="M">Masculino</option>
                 <option value="F">Femenino</option>
@@ -116,7 +116,11 @@
             <label for="tyc">He leido y acepto los terminos y condiciones</label>
             <br>
 
-            <input type="submit">
+            <input type="submit" value="enviar formulario">
+            <input type="reset">
+            <br>
+            <button type="submit">enviar formulario</button> <!--este tipo de input es preferible-->
+            <button type="reset">restablecer</button>
         </form>
 
     </section>
