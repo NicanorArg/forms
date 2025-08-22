@@ -12,16 +12,30 @@
 
     <section>
         <form>
-            <label for="name">Nombre y apellido</label>
+            <label for="texto">Nombre y apellido</label>
             <input 
                 type="text" 
-                name="name" id="name" 
+                name="name"
+                id="texto" 
                 placeholder="John Doe"
                 autofocus
                 required
-            > <!--name define el nombre del input que recibimos-->
+                value="Juan Carlos"
+            > <!--name define el nombre del input que recibimos, id define la identificacion del tag-->
             <br>
-
+            
+            <label for="password">Contraseña</label>
+            <input 
+            type="password" 
+            name="password" 
+            id="contraseña" 
+            placeholder="ingrese su contraseña"
+            required
+            minlength="8"
+            maxlength="16"
+            pattern="[a-z]{8}"
+            >
+            <br>
             <input type="submit">
         </form>
 
